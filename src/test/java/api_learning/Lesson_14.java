@@ -24,7 +24,6 @@ public class Lesson_14 {
         try {
             URL appiumSever = new URL("http://localhost:4723/wd/hub");
             appiumDriver = new AndroidDriver<MobileElement>(appiumSever, desiredCapabilities);
-            System.out.println("Chạy tới đây là đúng nhen");
             //Debug purpose only
             Thread.sleep(3000);
         }catch (Exception e) {
