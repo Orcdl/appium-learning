@@ -19,7 +19,7 @@ public class LoginFormTest {
         AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.ANDROID);
 
         try{
-            //Navigate to login screen
+            //Navigate to form screen
             MobileElement navLoginScreenBtnElme = appiumDriver.findElement(MobileBy.AccessibilityId("Login"));
             navLoginScreenBtnElme.click();
 
@@ -33,7 +33,7 @@ public class LoginFormTest {
             passlInputElem.sendKeys("12345678");
             buttonLoginlInputElem.click();
 
-            // Verification | Login dilog
+            // Verification | Login dialog
             WebDriverWait wait = new WebDriverWait(appiumDriver,5);
             wait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.id("android:id/alertTitle")));
 
